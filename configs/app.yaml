@@ -1,0 +1,13 @@
+title: YGO Tactical Assistant
+mode: replay
+log_level: INFO
+log_directory: ../logs
+capture_fps: 30
+capture_backend: wgc
+frame_queue_size: 2
+preview_fps: 30
+regions_path: regions.yaml
+snapshot_directory: ../data/captures
+ocr_confidence_threshold: 0.85
+search_budget_ms: 1000
+model_backend: disabled

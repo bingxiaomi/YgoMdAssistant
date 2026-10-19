@@ -1,0 +1,17 @@
+schema_version: '1.0'
+name: default
+reference_width: 2048
+reference_height: 1152
+regions:
+  duel_log:
+    label: 决斗日志
+    x: 0.817047817047817
+    y: 0.1303996303996304
+    width: 0.16943866943866948
+    height: 0.7687687687687688
+  effect_text:
+    label: 效果描述
+    x: 0.5395010395010394
+    y: 0.10637560637560638
+    width: 0.45841995841995853
+    height: 0.09609609609609608

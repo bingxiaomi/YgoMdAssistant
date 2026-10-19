@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools==75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ygo-tactical-assistant"
+version = "0.1.0"
+description = "Master Duel visual evidence and tactical analysis workbench"
+requires-python = ">=3.11,<3.13"
+dependencies = ["pydantic==2.10.6", "PyYAML==6.0.2", "numpy==2.2.3", "PySide6==6.8.2.1", "opencv-python==4.11.0.86", "windows-capture==2.0.1; sys_platform == 'win32'", "dxcam==0.3.0; sys_platform == 'win32'"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+ygo-assistant = "ygo_assistant.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
